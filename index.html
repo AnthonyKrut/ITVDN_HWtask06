@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 03</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/modal.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <img src="./img/logo.png" alt="Light-eye logo">
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="section section-starter">
+                <div class="container">
+                    <div class="section__card card">
+                        <h1 class="card__title">Отличное зрение для всех!</h1>
+                        <p class="card__motto">
+                            Мы поможем вам исправить и улучшить ваше зрение в короткий срок
+                        </p>
+                        <!-- <button class="card__btn btn">Начать</button> -->
+                        <a href="#modal" class="card__btn btn">Начать</a>
+                    </div>
+
+                    <h2 class="section__title">Услуги</h2>
+                    <ul class="section__service service">
+                        <li class="service__item">Проверка зрения</li>
+                        <li class="service__item">Детское отделение</li>
+                        <li class="service__item">Лазерная коррекция зрения</li>
+                        <li class="service__item">Лечение кератоконуса</li>
+                        <li class="service__item">Лазерное лечение заболеваний глаза</li>
+                        <li class="service__item">Лечение катаракты</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section section-prices">
+                <div class="container">
+                    <h2 class="section__title">Цены</h2>
+                    <div class="section__offer offer">
+                        <div class="offer__item">
+                            <h3 class="offer__title">Диагностика</h3>
+                            <ul class="offer__content">
+                                <li>Комплексный осмотр</li>
+                                <li>Скрининг поражения глаз при диабете</li>
+                                <li>Комплексный осмотр с дополнительным сервисом</li>
+                            </ul>
+                            <div class="offer__bottom">
+                                <div class="offer__price">75&dollar;</div>
+                                <button class="offer__btn btn">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="offer__item offer__item_green">
+                            <h3 class="offer__title">Услуги комфорта</h3>
+                            <ul class="offer__content">
+                                <li>Дневной стационар</li>
+                                <li>Оказание медицинской помощи</li>
+                                <li>Присмотр врача днем</li>
+                                <li>Терапия тревожных состояний</li>
+                            </ul>
+                            <div class="offer__bottom">
+                                <div class="offer__price">100&dollar;</div>
+                                <button class="offer__btn btn">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="offer__item">
+                            <h3 class="offer__title">Аппаратное лечение</h3>
+                            <ul class="offer__content">
+                                <li>Пакет "Амблиопия"</li>
+                                <li>Пакет "Косоглазие"</li>
+                                <li>Пакет "Резервы аккомодации"</li>
+                                <li>Пакет "Косоглазие + амблиопия"</li>
+                            </ul>
+                            <div class="offer__bottom">
+                                <div class="offer__price">30&dollar;</div>
+                                <button class="offer__btn btn">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__copyright">© Все права защищены</div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+
+        <div id="modal" class="modal">
+            <a class="modal__close" href="#"></a>
+
+            <form class="modal__form form" action="#" method="post">
+                <a class="form__close" href="#">X</a>
+
+                <h3 class="form__title">Записаться на прием</h3>
+                <p class="form__text">Мы позвоним вам в ближайшее время после подтверждения записи</p>
+
+                <input class="form__input" type="text" name="name" placeholder="Введите имя" required>
+                <input class="form__input" type="tel" name="phone" placeholder="+380__-___-__-__" required>
+                <textarea class="form__input message" name="message" placeholder="Введите сообщение"
+                    required></textarea>
+
+                <button class="form__btn btn" type="submit">Записаться на прием</button>
+            </form>
+        </div>
+
+        <!-- End of modal -->
+    </body>
+
+</html>

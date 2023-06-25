@@ -1,0 +1,120 @@
+form, fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.modal:target {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    visibility: visible;
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: rgba(0,0,0,0.4);
+    transition: opacity 200ms
+}
+
+.modal__close:hover {
+    opacity: 0.5;
+}
+
+.form {
+    width: 95%;
+    max-width: 600px;
+    padding: 1em;
+    border-radius: 2em;    
+    background: var(--main-bg-color);
+
+    position: relative;
+    bottom: 100vh;
+    transition: bottom ease-out 400ms;
+}
+
+.modal:target .form {
+    bottom: 0;
+}
+
+.form__close {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: var(--sec-txt-color);
+    cursor: pointer;
+    
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.form__title {
+    margin-bottom: 0.75em;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.form__text {
+    width: calc(100% - 2em);
+    margin: 0 auto 1em;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    border: 1px solid var(--sec-txt-color);
+    color: var(--sec-txt-color);
+}
+
+.form__input:focus {
+    outline: none;
+    border: 1px solid transparent;
+    background: var(--sec-bg-color);
+}
+
+.form__input::placeholder {
+    opacity: 0.55;
+}
+
+.message {
+    height: 5em;
+    resize: none;
+}
+
+.form__btn {
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+}
+
+.form__btn:hover {
+    border: 1px solid var(--sec-txt-color);
+    background-color: var(--main-bg-color);
+    color: var(--sec-txt-color);
+}
